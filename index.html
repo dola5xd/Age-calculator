@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age calculator app</title>
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <div class="continer">
+        <form>
+          <div class="inputs">
+            <label for="day">DAY</label>
+            <input
+              type="number"
+              required
+              class="days"
+              name="day"
+              placeholder="DD"
+              maxlength="2"
+              aria-valuemax="31"
+            />
+            <label for="month">MONTH</label>
+            <input
+              type="number"
+              required
+              class="months"
+              name="month"
+              placeholder="MM"
+              maxlength="2"
+            />
+            <label for="year">YEAR</label>
+            <input
+              type="number"
+              required
+              class="years"
+              name="year"
+              placeholder="YYYY"
+              maxlength="4"
+            />
+          </div>
+          <div class="seprator">
+            <hr />
+            <button id="btn">
+              <img src="./images/icon-arrow.svg" class="arrow" />
+            </button>
+          </div>
+        </form>
+        <div class="output">
+          <p><span id="year">--</span>years</p>
+          <p><span id="month">--</span>months</p>
+          <p><span id="day">--</span>days</p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
